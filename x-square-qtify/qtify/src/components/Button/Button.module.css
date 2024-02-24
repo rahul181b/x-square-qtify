@@ -1,0 +1,12 @@
+.Button {
+   width: 170px;
+   height: 47px;
+   background-color: #121212;
+   color: #34c94b;
+   font-family: "poppins", sans-serif;
+   font-weight: 600;
+   font-size: 18px;
+   padding: 10px 16px 10px 16px;
+   border: 1px;
+   border-radius: 12px;
+}

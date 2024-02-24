@@ -1,0 +1,36 @@
+div {
+   margin: 0px;
+}
+
+.Rectangle {
+   width: 66px;
+   height: 48px;
+
+   border-radius: 0px 8px 8px 0px;
+   border: 1px solid #121212;
+}
+
+.SearchBar {
+   width: 568px;
+   height: 48px;
+   border: 1px solid #121212;
+   border-radius: 8px 0px 0px 8px;
+   padding-left: 20px;
+   padding-top: 2px;
+}
+::placeholder {
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   letter-spacing: 0.2px;
+}
+
+.image {
+   height: 20px;
+   width: 20px;
+   padding-top: 13px;
+}
+.divFlex {
+   display: flex;
+}
