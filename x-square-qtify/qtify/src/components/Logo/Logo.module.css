@@ -2,7 +2,11 @@
    width: 167px;
    height: 34px;
 
-   padding-left: 32px;
    margin-top: 10px;
    margin-bottom: 10px;
+   margin-left: 10px;
+}
+
+img {
+   margin-left: 32px;
 }
