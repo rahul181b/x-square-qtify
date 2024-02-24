@@ -1,9 +1,8 @@
 .Logo {
    width: 167px;
    height: 34px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
    padding-left: 32px;
-   padding-top: 18px;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
