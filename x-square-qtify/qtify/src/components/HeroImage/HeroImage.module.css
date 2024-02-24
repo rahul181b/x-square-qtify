@@ -1,0 +1,9 @@
+.ImgContainer {
+   display: flex;
+   align-items: center;
+}
+
+.ImgSize {
+   width: 212px;
+   height: 212px;
+}
