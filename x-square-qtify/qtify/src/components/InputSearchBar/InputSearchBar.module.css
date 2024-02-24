@@ -8,6 +8,7 @@ div {
 
    border-radius: 0px 8px 8px 0px;
    border: 1px solid #121212;
+   cursor: pointer;
 }
 
 .SearchBar {

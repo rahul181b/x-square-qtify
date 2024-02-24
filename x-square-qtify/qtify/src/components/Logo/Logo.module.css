@@ -1,4 +1,6 @@
 .Logo {
    width: 167px;
    height: 34px;
+   align-items: center;
+   padding-left: 32px;
 }
