@@ -5,7 +5,7 @@ import { CircularProgress } from "@mui/material";
 import Card from "../Card/Card";
 
 function Section({ title, data, type }) {
-   const [carousalToggle, setcarousalToggle] = useState(true);
+   const [carousalToggle, setcarousalToggle] = useState(false);
 
    const handleToggle = () => {
       setcarousalToggle((prevState) => !prevState);
