@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 import InputSearchBar from "../InputSearchBar/InputSearchBar";
-function Navbar() {
+function Navbar({ searchData }) {
    return (
       <>
          <div className={styles.Navbar}>

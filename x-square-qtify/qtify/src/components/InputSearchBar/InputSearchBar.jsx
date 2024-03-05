@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "../Assets/Search-icon.png";
 import Styles from "./InputSearchBar.module.css";
-function InputSearchBar() {
+function InputSearchBar({ searchData }) {
    return (
       <div className={Styles.divFlex}>
          <input
