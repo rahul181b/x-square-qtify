@@ -7,16 +7,17 @@ import Card from "../Card/Card";
 function Section({ title, data, type }) {
    const [carousalToggle, setcarousalToggle] = useState(true);
 
-   const handleToggle = (carousalToggle) => {
+   const handleToggle = () => {
       setcarousalToggle((prevState) => !prevState);
    };
    return (
       <div>
-         <div className={style.header}></div>
-         <h3>{title}</h3>
-         <h4 className={style.toggleText} onClick={handleToggle}>
-            {!carousalToggle ? "Cpllapse All" : "Show All"}
-         </h4>
+         <div className={style.header}>
+            <h3>{title}</h3>
+            <h4 className={style.toggleText} onClick={handleToggle}>
+               {!carousalToggle ? "Cpllapse All" : "Show All"}
+            </h4>
+         </div>
          {data.length === 0 ? (
             <CircularProgress />
          ) : (

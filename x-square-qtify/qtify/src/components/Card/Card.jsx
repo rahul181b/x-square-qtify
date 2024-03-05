@@ -15,7 +15,7 @@ function Card({ data, type }) {
                   <a href={`/album/${slugs}`}>
                      <div className={styles.wraper}>
                         <div className={styles.card}>
-                           <img src={img} alt="banner" />
+                           <img src={image} alt="banner" />
                            <div className={styles.banner}>
                               <div>
                                  <Chip
@@ -27,7 +27,7 @@ function Card({ data, type }) {
                            </div>
                         </div>
                         <div className={styles.titleWrapper}>
-                           <p>New Bollywood</p>
+                           <p>{title}</p>
                         </div>
                      </div>
                   </a>
