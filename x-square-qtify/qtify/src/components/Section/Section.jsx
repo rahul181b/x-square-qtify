@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import style from "./Section.module.css";
 import { CircularProgress } from "@mui/material";
 import Card from "../Card/Card";
+import Carousel from "../Carousel/Carousel";
 
 function Section({ title, data, type }) {
-   const [carousalToggle, setcarousalToggle] = useState(false);
+   const [carousalToggle, setcarousalToggle] = useState(true);
 
    const handleToggle = () => {
       setcarousalToggle((prevState) => !prevState);
@@ -15,7 +16,7 @@ function Section({ title, data, type }) {
          <div className={style.header}>
             <h3>{title}</h3>
             <h4 className={style.toggleText} onClick={handleToggle}>
-               {!carousalToggle ? "Cpllapse All" : "Show All"}
+               {!carousalToggle ? "Collapse" : "Show All"}
             </h4>
          </div>
          {data.length === 0 ? (
@@ -29,7 +30,10 @@ function Section({ title, data, type }) {
                      ))}
                   </div>
                ) : (
-                  <div></div>
+                  <Carousel
+                     data={data}
+                     renderComponent={(data) => <Card data={data} type={type} />}
+                  />
                )}
             </div>
          )}
