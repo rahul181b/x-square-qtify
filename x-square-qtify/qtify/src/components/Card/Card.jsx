@@ -3,6 +3,7 @@ import Chip from "@mui/material/Chip";
 import styles from "./Card.module.css";
 import img from "../Assets/albumCard.png";
 import { Tooltip } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Card({ data, type }) {
    const getCard = (type) => {
@@ -12,7 +13,7 @@ function Card({ data, type }) {
 
             return (
                <Tooltip title={`${songs.length} Songs`} placement="top" arrow>
-                  <a href={`/album/${slugs}`}>
+                  <Link to={`/album/${slugs}`}>
                      <div className={styles.wraper}>
                         <div className={styles.card}>
                            <img src={image} alt="banner" />
@@ -30,24 +31,25 @@ function Card({ data, type }) {
                            <p>{title}</p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </Tooltip>
             );
          }
 
-         case "song": {
+         case "songs": {
+            const { image, likes, title, songs } = data;
             return (
                <div className={styles.wraper}>
                   <div className={styles.card}>
-                     <img src={img} alt="banner" />
+                     <img src={image} alt="banner" loading="lazy" />
                      <div className={styles.banner}>
                         <div>
-                           <Chip className={styles.pill} label="100 Follows" />
+                           <Chip className={styles.pill} label={`${likes} Likes`} />
                         </div>
                      </div>
                   </div>
                   <div className={styles.titleWrapper}>
-                     <p>New Bollywood</p>
+                     <p>{title}</p>
                   </div>
                </div>
             );

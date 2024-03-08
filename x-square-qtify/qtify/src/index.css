@@ -35,3 +35,9 @@ svg {
 .swiper-slide {
    width: auto !important;
 }
+
+a,
+a:hover,
+a:active {
+   text-decoration: none;
+}
